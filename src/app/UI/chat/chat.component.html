@@ -1,0 +1,61 @@
+<section class="msger">
+  <header class="msger-header">
+      <div class="msger-header-title"><i class="fa-solid fa-comment-dots"></i> &nbsp;ChatGPT</div>
+      <div class="msger-header-options">
+          <!-- <span> +</span> -->
+      </div>
+  </header>
+
+  <main class="msger-chat">
+
+      <span *ngIf="hideapp"><app-first-page (newEvent)="OnDisplay($event)" ></app-first-page></span>
+
+     
+
+      <div *ngFor="let item of data">
+          <div *ngIf="!hideapp">
+              <div class="msg left-msg">
+                  <div class="msg-img"><i class="fa-solid fa-user"></i> </div>
+                  <div classs="msg-bubble">
+                      <div class="msg-text">
+                          YOU
+                      </div>
+                  </div>
+              </div>
+
+              <div class="question">
+                  <p>{{ item.ques}}</p>
+              </div>
+              <div class="msg left-msg">
+                  <div class="msg-img"><i class="fa-solid fa-robot"></i></div>
+                  <div class="msg-bubble">
+                      <div class="msg-text">
+                          LPL ChatGPT
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  
+                      <div class="snippet" data-title="dot-pulse" style="padding-left: 58px;" *ngIf="loaderVisible">
+                        <div class="stage">
+                          <div class="dot-pulse"></div>
+                        </div>
+                      </div>
+                    
+                  <p>Hi, I need help with financial services to save my earnings. {{item.ans }}</p>
+              </div>
+
+          </div>
+      </div>
+
+
+
+  </main>
+
+  <form class="msger-inputarea">
+      <input [(ngModel)]="userInputMsg" name="message" type="text" class="msger-input"
+          placeholder="Enter your message..." />
+      <button type="submit" class="msger-send-btn" (click)="send()"><i class="fa-solid fa-paper-plane"></i></button>
+  </form>
+</section>
