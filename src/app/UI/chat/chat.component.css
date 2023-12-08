@@ -6,11 +6,11 @@
     --left-msg-bg: #ececec;
     --right-msg-bg: #579ffb;
   }
-  
+
   html {
     box-sizing: border-box;
   }
-  
+
   *,
   *:before,
   *:after {
@@ -18,7 +18,7 @@
     padding: 0;
     box-sizing: inherit;
   }
-  
+
   body {
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
     margin-bottom: 10px;
   }
   .msger {
-   
+
     display: contents;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -44,7 +44,7 @@
     background: var(--msger-bg);
     box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
   }
-  
+
   .msger-header {
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@
     background: #eee;
     color: #666;
   }
-  
+
   .msger-chat {
     flex: 1;
     overflow-y: auto;
@@ -73,13 +73,13 @@
     display: flex;
     align-items: flex-end;
     /* margin-bottom: 10px; */
-    
+
   }
   .msg:last-of-type {
     margin: 0;
   }
- 
-  
+
+
   .msg-info {
     display: flex;
     justify-content: space-between;
@@ -93,12 +93,12 @@
   .msg-info-time {
     font-size: 0.85em;
   }
-  
+
   .left-msg .msg-bubble {
     border-bottom-left-radius: 0;
-    
+
   }
-  
+
   .right-msg {
     flex-direction: row-reverse;
   }
@@ -110,7 +110,7 @@
   .right-msg .msg-img {
     margin: 0 0 0 10px;
   }
-  
+
   .msger-inputarea {
     display: flex;
     padding: 10px;
@@ -138,32 +138,44 @@
   .msger-send-btn:hover {
     background: rgb(0, 180, 50);
   }
-  
+
   .msger-chat {
     background-color: #3a3b3b;
     height: 470px;
   }
-  p{
+  .row{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .row-bot{
+    margin-bottom: 10px;
+    background-color: #424343;
+    padding-bottom: 10px;
+  }
+  /* p{
     margin-left: 30px;
     margin-top: 20px;
-  }
+  } */
   .msg-text{
     font-size: 20px;
      font-weight: bold;
-     
+
   }
 
   .msg-img {
-    /*width: 30px;
+    width: 30px;
     height: 30px;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    /*
     background: #ddd;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
     border-radius: 50%; */
     margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
   }
-  

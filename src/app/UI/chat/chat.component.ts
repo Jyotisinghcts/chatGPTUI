@@ -13,8 +13,8 @@ export class ChatComponent {
   hideapp = true
   loaderVisible = false;
   //inputdata="passingvalue"
-  data = [{ "ques": 'message', "ans": 'answer' },
-  { "ques": 'message2', "ans": 'answer2' }]
+  data = [{ "ques": 'Hi', "ans": 'Hello There, How can I help you today?' },
+  { "ques": 'I need help with financial services to save my earnings.', "ans": 'Certainly I can provide some general guidance on financial services and saving.' }]
 
 
 
